@@ -1,0 +1,43 @@
+article{
+    background-color: lightblue;
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: justify;
+}
+
+#banner{
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 10px;
+    height: 500px;
+    background-image: url(../images/star-sky.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+#banner p{
+    text-align: center;
+    color: white;
+}
+
+#second-post{
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+span{
+    color: red;
+    /* display: block; */
+    display: inline-block;
+    border: 1px solid black;
+    width: 300px;
+}
+

@@ -1,0 +1,73 @@
+.hero-banner{
+    display: flex;
+    background-color: lightblue;
+    padding: 20px;
+    align-items: center;
+}
+
+.banner-content{
+    flex: 1;
+    text-align: center;
+}
+
+.banner-img-content{
+    flex: 1;
+}
+
+.banner-img-content img{
+    width: 100%;
+}
+
+.banner-content button{
+    padding: 10px 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.banner-content button:hover{
+    background-color: rgb(106, 106, 208);
+}
+
+
+/* contact us form here css */
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid gray;
+    margin: 20px 0px;
+}
+
+.form-content h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.form-content input, .form-content textarea{
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form-content button{
+    padding: 12px;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

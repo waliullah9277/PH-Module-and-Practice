@@ -1,0 +1,23 @@
+nav ul{
+    list-style: none;
+    display: flex;    
+    background-color: purple;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li:hover{
+    background-color: rgba(240, 225, 228, 0.138);
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover{
+    color: lightcoral;
+}
