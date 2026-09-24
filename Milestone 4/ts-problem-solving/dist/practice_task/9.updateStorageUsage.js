@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const updateStorageUsage = (currentUsageMB, action) => {
+    if (action.type === "upload") {
+        return currentUsageMB + action.sizeMB;
+    }
+    if (action.type === "delete") {
+        if (currentUsageMB < action.sizeMB) {
+            return 0;
+        }
+    }
+    return currentUsageMB - action.sizeMB;
+};
+console.log(updateStorageUsage(2000, { type: "upload", sizeMB: 500 })); // 2500 
+console.log(updateStorageUsage(2000, { type: "delete", sizeMB: 800 })); // 1200 
+// usage floor at zero:
+console.log(updateStorageUsage(300, { type: "delete", sizeMB: 1000 })); // 0
+//# sourceMappingURL=9.updateStorageUsage.js.map
