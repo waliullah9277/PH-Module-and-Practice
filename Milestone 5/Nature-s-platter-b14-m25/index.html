@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Platter</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- nav bar start here -->
+    <header class="bg-[#EFEBE3]">
+      <nav class="container mx-auto py-4 px-4">
+        <div class="flex justify-between items-center">
+          <img
+            src="./assets/nav-logo.png"
+            alt=""
+            class="w-28 md:w-32 h-14 md:h-16 object-contain"
+          />
+
+          <!-- desktop menu -->
+          <ul class="hidden md:flex justify-center items-center gap-6">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+
+          <!-- desktop right side -->
+          <div class="hidden md:flex justify-end items-center gap-4">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span><i class="fa-solid fa-cart-plus"></i></span>
+            <button
+              class="border border-green-500 text-black px-4 py-1 rounded w-28 lg:w-32 font-thin"
+            >
+              Login
+            </button>
+            <button
+              class="bg-green-500 text-white px-4 py-1 rounded w-28 lg:w-32 font-thin"
+            >
+              Register
+            </button>
+          </div>
+
+          <!-- hamburger button (mobile only) -->
+          <button
+            id="menu-btn"
+            class="md:hidden text-2xl text-black"
+            aria-label="Toggle menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- mobile menu panel -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden mt-4 flex flex-col gap-4 pb-4"
+        >
+          <ul class="flex flex-col gap-3 text-center">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="flex justify-center items-center gap-4">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span><i class="fa-solid fa-cart-plus"></i></span>
+          </div>
+          <div class="flex flex-col gap-2 px-4">
+            <button
+              class="border border-green-500 text-black px-4 py-2 rounded w-full font-thin"
+            >
+              Login
+            </button>
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded w-full font-thin"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container mx-auto px-4">
+        <div class="w-full sm:max-w-[80%] md:max-w-[55%] lg:max-w-[45%] mx-auto text-center">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+            Freshness
+            <span class="text-green-500"
+              >You Can <br class="hidden sm:block" />
+              Count</span
+            >
+            On, Prices You’ll Love!
+          </h1>
+          <p class="text-gray-600 text-sm sm:text-base">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <img
+          class="mx-auto w-full max-w-[650px] h-auto"
+          src="/assets/Hero Section 1.png"
+          alt="Fresh Produce"
+        />
+      </section>
+    </header>
+    <!-- nav bar end here -->
+
+    <!-- services section start here -->
+    <section class="container mx-auto my-8 px-4">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-green-500">Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-[#EFEBE3] py-4 rounded-lg text-center space-y-4">
+          <div
+            class="bg-white w-20 h-20 rounded-full flex justify-center items-center mb-4 mx-auto"
+          >
+            <img class="w-16 h-16" src="./assets/service.png" alt="" />
+          </div>
+          <h2 class="text-xl font-semibold">24/7 Services</h2>
+          <p class="px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </p>
+        </div>
+        <div class="bg-[#EFEBE3] p-4 rounded-lg text-center space-y-4">
+          <div
+            class="bg-white w-20 h-20 rounded-full flex justify-center items-center mb-4 mx-auto"
+          >
+            <img class="w-16 h-16" src="./assets/delivery.png" alt="" />
+          </div>
+          <h2 class="text-xl font-semibold">Fast Delivery</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </p>
+        </div>
+        <div class="bg-[#EFEBE3] py-4 rounded-lg text-center space-y-4">
+          <div
+            class="flex justify-center items-center mb-4 mx-auto bg-white w-20 h-20 rounded-full"
+          >
+            <img class="w-16 h-16" src="./assets/products.png" alt="" />
+          </div>
+          <h2 class="text-xl font-semibold">Healthy Products</h2>
+          <p class="px-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- services section end here -->
+
+    <!-- popular product section start here -->
+    <section class="bg-[#EFEBE3] p-4">
+      <div class="container mx-auto my-8">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-green-500">Popular Products</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+          <!-- left 30% -->
+          <div
+            class="md:col-span-3 bg-linear-to-r from-green-600 to-green-300 rounded text-left space-y-4 pb-4"
+          >
+            <h2 class="text-2xl text-white ml-6 mt-6 font-bold">30% Off</h2>
+            <p class="text-gray-700 ml-6">
+              Discover a wide range of fresh and healthy products at discounted
+              prices!
+            </p>
+            <button
+              class="bg-white text-black px-3 py-1 rounded w-28 font-thin ml-6"
+            >
+              Buy Now
+            </button>
+            <img
+              src="./assets/Mask group.png"
+              alt=""
+              class="mx-auto w-40 md:w-full md:-mt-23 mr-0"
+            />
+          </div>
+
+          <!-- right 70% -->
+          <div class="md:col-span-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/onion.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Onion 1KG</h2>
+                <span class="text-xl font-semibold">$30.59</span>
+              </div>
+            </div>
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/tomato.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Tomato 1KG</h2>
+                <span class="text-xl font-semibold">$39.59</span>
+              </div>
+            </div>
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/potato.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Potato 2KG</h2>
+                <span class="text-xl font-semibold">$35.59</span>
+              </div>
+            </div>
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/tomato.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Tomato 2KG</h2>
+                <span class="text-xl font-semibold">$60.50</span>
+              </div>
+            </div>
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/onion.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Onion 1KG</h2>
+                <span class="text-xl font-semibold">$30.59</span>
+              </div>
+            </div>
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/potato.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Potato 1KG</h2>
+                <span class="text-xl font-semibold">$35.59</span>
+              </div>
+            </div>
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/onion.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Onion 1KG</h2>
+                <span class="text-xl font-semibold">$30.59</span>
+              </div>
+            </div>
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/potato.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Potato 1KG</h2>
+                <span class="text-xl font-semibold">$35.59</span>
+              </div>
+            </div>
+            <div class="flex rounded p-2 gap-4 bg-white items-center">
+              <div><img src="./assets/tomato.png" alt="" /></div>
+              <div>
+                <span class="text-xl font-semibold">4.5</span>
+                <h2 class="text-lg font-bold">Tomato 1KG</h2>
+                <span class="text-xl font-semibold">$39.59</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- popular product section end here -->
+
+    <!-- Arrival & Offers section start here -->
+    <section class="p-4 container mx-auto my-8">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-green-500">Arrival & Offers</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div
+          class="col-span-1 md:col-span-7 p-4 rounded-lg flex flex-col sm:flex-row justify-between items-center gap-4 bg-green-900 text-center sm:text-left"
+        >
+          <div class="space-y-4">
+            <img
+              src="./assets/dawat-logo.png"
+              alt=""
+              class="w-32 h-16 object-contain mx-auto sm:mx-0"
+            />
+            <button
+              class="bg-green-700 text-white px-4 py-3 rounded w-60 font-thin"
+            >
+              Cook Exotic Dishes
+            </button>
+            <h2 class="text-2xl text-white">Up to 20% Off</h2>
+          </div>
+          <div>
+            <img
+              src="./assets/offers-1.png"
+              alt=""
+              class="max-w-[200px] sm:max-w-full h-auto object-contain mx-auto"
+            />
+          </div>
+        </div>
+
+        <div
+          class="col-span-1 md:col-span-5 p-4 rounded-lg flex flex-col sm:flex-row justify-between items-center gap-4 bg-blue-900 text-center sm:text-left"
+        >
+          <div class="space-y-4">
+            <img
+              src="./assets/gate-logo.png"
+              alt=""
+              class="w-32 h-16 object-contain mx-auto sm:mx-0"
+            />
+            <button
+              class="bg-blue-700 text-white px-4 py-3 rounded w-60 font-thin"
+            >
+              World's No.1 Rice
+            </button>
+            <h2 class="text-2xl text-white">Up to 40% Off</h2>
+          </div>
+          <div>
+            <img
+              src="./assets/offers-2.png"
+              alt=""
+              class="max-w-[200px] sm:max-w-full h-auto object-contain mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Arrival & Offers section end here -->
+
+    <!-- newslater section start here -->
+    <section class="relative z-10 -mb-24 px-4">
+      <div
+        class="bg-[#EFEBE3] p-6 md:p-10 container mx-auto flex flex-col md:flex-row text-center md:text-left justify-between items-center gap-6 rounded-2xl shadow-lg"
+      >
+        <div class="shrink-0">
+          <img
+            src="./assets/grocery-basket.png"
+            alt=""
+            class="w-40 md:w-64 h-auto object-contain"
+          />
+        </div>
+        <div class="space-y-4 w-full md:w-auto md:max-w-md">
+          <h2 class="text-2xl sm:text-3xl text-black font-bold">Get Grocery News!</h2>
+          <p class="text-gray-500">
+            Exclusive training tips, ticks, product deals and more.
+          </p>
+          <input
+            type="text"
+            placeholder="Enter email..."
+            class="border-none px-4 py-3 rounded w-full bg-white text-black shadow-sm"
+          />
+          <div>
+            <button
+              class="bg-green-600 text-white px-6 py-2.5 rounded font-medium w-full sm:w-auto"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- newslater section end here -->
+
+    <!-- footer section start here -->
+    <footer class="bg-green-600 text-white pt-32 pb-8">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-center md:text-left"
+      >
+        <!-- logo & tagline -->
+        <div class="space-y-3">
+          <div class="flex items-center justify-center md:justify-start gap-2">
+            <img src="./assets/footer-logo.png" alt="" />
+          </div>
+          <p class="text-green-100 text-sm max-w-xs mx-auto md:mx-0">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
+        </div>
+
+        <!-- links -->
+        <div class="space-y-3 md:justify-self-center">
+          <p><a href="#">Product</a></p>
+          <p><a href="#">Services</a></p>
+          <p><a href="#">Contact us</a></p>
+        </div>
+
+        <!-- social -->
+        <div class="space-y-3 md:justify-self-end text-center md:text-left">
+          <p class="font-medium">Follow Us</p>
+          <div class="flex gap-3 justify-center md:justify-start">
+            <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full border border-white/60 hover:bg-white/10">
+              <i class="fa-brands fa-facebook-f text-sm"></i>
+            </a>
+            <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full border border-white/60 hover:bg-white/10">
+              <i class="fa-brands fa-instagram text-sm"></i>
+            </a>
+            <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full border border-white/60 hover:bg-white/10">
+              <i class="fa-brands fa-linkedin-in text-sm"></i>
+            </a>
+            <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full border border-white/60 hover:bg-white/10">
+              <i class="fa-brands fa-youtube text-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end here -->
+
+    <!-- <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        const icon = menuBtn.querySelector("i");
+        icon.classList.toggle("fa-bars");
+        icon.classList.toggle("fa-xmark");
+      });
+    </script> -->
+  </body>
+</html>
