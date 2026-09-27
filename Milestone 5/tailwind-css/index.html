@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h2 class="text-red-500">Hello Tailwind CSS</h2>
+    <div class="w-80 bg-white rounded-2xl shadow-lg overflow-hidden">
+
+    <!-- Product Image -->
+    <div class="relative bg-purple-100 p-4">
+        <span class="absolute top-6 left-6 bg-purple-600 text-white text-xs px-3 py-1 rounded-full">
+            New
+        </span>
+
+        <img
+            src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=500"
+            alt="Premium Panjabi"
+            class="w-full h-64 object-cover rounded-xl"
+        >
+    </div>
+
+    <!-- Product Details -->
+    <div class="p-5">
+
+        <p class="text-sm text-purple-600 font-medium">
+            Men's Fashion
+        </p>
+
+        <h2 class="text-xl font-bold text-gray-800 mt-1">
+            Premium Panjabi
+        </h2>
+
+        <p class="text-sm text-gray-500 mt-2">
+            Premium quality fabric with a comfortable
+            and stylish design.
+        </p>
+
+        <!-- Price -->
+        <div class="flex items-center gap-2 mt-4">
+            <span class="text-2xl font-bold text-purple-600">
+                ৳1,800
+            </span>
+
+            <span class="text-sm text-gray-400 line-through">
+                ৳2,200
+            </span>
+        </div>
+
+        <!-- Color -->
+        <div class="mt-4">
+            <p class="text-sm font-semibold text-gray-700 mb-2">
+                Color
+            </p>
+
+            <div class="flex gap-3">
+                <button class="w-7 h-7 rounded-full bg-purple-600 ring-2 ring-purple-600 ring-offset-2"></button>
+                <button class="w-7 h-7 rounded-full bg-black"></button>
+                <button class="w-7 h-7 rounded-full bg-gray-400"></button>
+            </div>
+        </div>
+
+        <!-- Quantity + Cart -->
+        <div class="flex items-center gap-3 mt-5">
+
+            <div class="flex items-center border border-gray-200 rounded-lg">
+                <button class="w-9 h-9 text-gray-600 hover:bg-purple-50">
+                    −
+                </button>
+
+                <span class="w-8 text-center font-semibold">
+                    1
+                </span>
+
+                <button class="w-9 h-9 text-gray-600 hover:bg-purple-50">
+                    +
+                </button>
+            </div>
+
+            <button
+                class="flex-1 bg-purple-600 hover:bg-purple-700
+                       text-white font-semibold py-2.5 rounded-lg
+                       transition">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
