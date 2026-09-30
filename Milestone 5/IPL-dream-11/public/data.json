@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "playerName": "Jos Buttler",
+    "playerImg": "data:image/webp;base64,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",
+    "origin": "England",
+    "playerType": "Wicket-Keeper Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-hand",
+    "price": 700
+  },
+  {
+    "id": 2,
+    "playerName": "Virat Kohli",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/2.png",
+    "origin": "India",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-hand",
+    "price": 750
+  },
+  {
+    "id": 3,
+    "playerName": "Rohit Sharma",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/6.png",
+    "origin": "India",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm off break",
+    "battingStyle": "Right-hand",
+    "price": 650
+  },
+  {
+    "id": 4,
+    "playerName": "Shubman Gill",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/62.png",
+    "origin": "India",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm off break",
+    "battingStyle": "Right-hand",
+    "price": 600
+  },
+  {
+    "id": 5,
+    "playerName": "Ruturaj Gaikwad",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/102.png",
+    "origin": "India",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm off break",
+    "battingStyle": "Right-hand",
+    "price": 550
+  },
+  {
+    "id": 6,
+    "playerName": "Suryakumar Yadav",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/174.png",
+    "origin": "India",
+    "playerType": "Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-hand",
+    "price": 650
+  },
+  {
+    "id": 7,
+    "playerName": "Rishabh Pant",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/18.png",
+    "origin": "India",
+    "playerType": "Wicket-Keeper Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Left-hand",
+    "price": 600
+  },
+  {
+    "id": 8,
+    "playerName": "KL Rahul",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/19.png",
+    "origin": "India",
+    "playerType": "Wicket-Keeper Batter",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-hand",
+    "price": 550
+  },
+  {
+    "id": 9,
+    "playerName": "Hardik Pandya",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/54.png",
+    "origin": "India",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm fast-medium",
+    "battingStyle": "Right-hand",
+    "price": 600
+  },
+  {
+    "id": 10,
+    "playerName": "Ravindra Jadeja",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/46.png",
+    "origin": "India",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Left-arm orthodox",
+    "battingStyle": "Left-hand",
+    "price": 550
+  },
+  {
+    "id": 11,
+    "playerName": "Andre Russell",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/141.png",
+    "origin": "West Indies",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm fast",
+    "battingStyle": "Right-hand",
+    "price": 500
+  },
+  {
+    "id": 12,
+    "playerName": "Glenn Maxwell",
+    "playerImg": "https://e0.365dm.com/24/01/2048x1152/skysports-australia-glenn-maxwell_6429435.jpg?20240122114404",
+    "origin": "Australia",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm off break",
+    "battingStyle": "Right-hand",
+    "price": 500
+  },
+  {
+    "id": 13,
+    "playerName": "Liam Livingstone",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/183.png",
+    "origin": "England",
+    "playerType": "All-Rounder",
+    "bowlingStyle": "Right-arm leg break",
+    "battingStyle": "Right-hand",
+    "price": 450
+  },
+  {
+    "id": 14,
+    "playerName": "Rashid Khan",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/218.png",
+    "origin": "Afghanistan",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm leg break",
+    "battingStyle": "Right-hand",
+    "price": 600
+  },
+  {
+    "id": 15,
+    "playerName": "Jasprit Bumrah",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/9.png",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "battingStyle": "Right-hand",
+    "price": 650
+  },
+  {
+    "id": 16,
+    "playerName": "Mohammed Siraj",
+    "playerImg": "https://th.bing.com/th/id/OIP.RcAPxilWDskVdqUQnCKRBgHaHa?w=156&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "battingStyle": "Right-hand",
+    "price": 450
+  },
+  {
+    "id": 17,
+    "playerName": "Arshdeep Singh",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/125.png",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm fast-medium",
+    "battingStyle": "Left-hand",
+    "price": 450
+  },
+  {
+    "id": 18,
+    "playerName": "Trent Boult",
+    "playerImg": "https://th.bing.com/th/id/OIP.0-IcxqDuLm35diOIV-xXrgHaE8?w=253&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+    "origin": "New Zealand",
+    "playerType": "Bowler",
+    "bowlingStyle": "Left-arm fast",
+    "battingStyle": "Right-hand",
+    "price": 400
+  },
+  {
+    "id": 19,
+    "playerName": "Pat Cummins",
+    "playerImg": "https://cdn.siasat.com/wp-content/uploads/2023/11/Pat-Cummins-.jpg",
+    "origin": "Australia",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "battingStyle": "Right-hand",
+    "price": 550
+  },
+  {
+    "id": 20,
+    "playerName": "Yuzvendra Chahal",
+    "playerImg": "https://documents.iplt20.com/ipl/IPLHeadshot2025/10.png",
+    "origin": "India",
+    "playerType": "Bowler",
+    "bowlingStyle": "Right-arm leg break",
+    "battingStyle": "Right-hand",
+    "price": 400
+  }
+]
