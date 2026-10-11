@@ -1,4 +1,3 @@
-
 import dns from "dns/promises";
 
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
@@ -6,6 +5,7 @@ dns.setServers(["8.8.8.8", "8.8.4.4"]);
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import { Toast } from "@heroui/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,11 +29,11 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Navbar />
 
-        <Navbar></Navbar>
-        <main>
-          {children}
-        </main>
+        <Toast.Provider placement="top end" style={{ top: "80px" }}/>
+
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
