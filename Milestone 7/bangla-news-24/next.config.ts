@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
   experimental: {
     agentFeedback: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ichef.bbci.co.uk',
+      },
+    ],
+  },
   reactCompiler: true,
   turbopack: {
     rules: {
