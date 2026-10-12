@@ -1,6 +1,7 @@
 import Image from "next/image";
-import NavLinks from "./NavLinks";
 import Link from "next/link";
+import NavLinks from "./NavLinks";
+import UserDetails from "./UserDetails";
 
 const Header = () => {
     const date = new Date().toLocaleDateString("bn-BD", {
@@ -8,47 +9,45 @@ const Header = () => {
     });
 
     return (
-        <header>
+        <header className="w-full">
             {/* Main Header */}
-            <div className="container mx-auto relative flex items-center justify-between py-3">
+            <div className="container mx-auto px-2 sm:px-4">
+                <div className="flex min-h-10 items-center justify-between gap-1 py-1.5 min-[360px]:min-h-12 min-[360px]:py-2 sm:min-h-16 sm:gap-4 sm:py-3">
 
-                {/* Logo and Text - Center */}
-                <Link href={'/'} className="mt-[-40]">
-                    <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2">
+                    {/* Logo and Text - Left Side */}
+                    <Link
+                        href="/"
+                        className="flex min-w-0 flex-1 items-center gap-1 min-[360px]:gap-1.5 sm:gap-3"
+                    >
                         <Image
                             src="/logo.webp"
                             width={50}
                             height={50}
                             alt="Logo Image"
-                            className="w-10 h-10"
+                            priority
+                            className="h-5 w-5 shrink-0 object-contain min-[360px]:h-6 min-[360px]:w-6 sm:h-12 sm:w-12"
                         />
 
-                        <div>
-                            <h2 className="text-xl font-bold text-red-600">
+                        <div className="min-w-0">
+                            <h2 className="truncate text-[11px] font-bold leading-4 text-red-600 min-[360px]:text-xs sm:text-xl sm:leading-normal">
                                 Bangla News 24
                             </h2>
 
-                            <p className="text-sm text-gray-500">
+                            <p className="mt-0 truncate text-[8px] leading-[10px] text-gray-500 min-[360px]:text-[9px] min-[360px]:leading-3 sm:mt-0.5 sm:text-sm sm:leading-5">
                                 {date}
                             </p>
                         </div>
+                    </Link>
+
+                    {/* Login / Profile - Right Side */}
+                    <div className="flex shrink-0 items-center justify-end [&_button]:px-1.5 [&_button]:py-0.5 [&_button]:text-[11px] min-[360px]:[&_button]:px-2 min-[360px]:[&_button]:py-1 min-[360px]:[&_button]:text-xs sm:[&_button]:px-4 sm:[&_button]:py-2 sm:[&_button]:text-sm [&_img]:h-6 [&_img]:w-6 min-[360px]:[&_img]:h-7 min-[360px]:[&_img]:w-7 sm:[&_img]:h-8 sm:[&_img]:w-8">
+                        <UserDetails />
                     </div>
-                </Link>
-
-                {/* Buttons - Right Side */}
-                <div className="ml-auto flex items-center gap-2">
-                    <button className="btn btn-sm h-8 min-h-0 border border-gray-300 bg-white px-4 text-gray-700 shadow-none transition-all duration-300 hover:border-red-600 hover:bg-red-50 hover:text-red-600">
-                        সাইন ইন
-                    </button>
-
-                    <button className="btn btn-sm h-8 min-h-0 border-none bg-red-600 px-4 text-white shadow-sm transition-all duration-300 hover:bg-red-800">
-                        সাইন আপ
-                    </button>
                 </div>
             </div>
 
             {/* Navigation - Below Header */}
-            <nav className="mt-3 mb-3">
+            <nav className="mb-1.5 mt-1 w-full sm:mb-3 sm:mt-2">
                 <NavLinks />
             </nav>
         </header>
