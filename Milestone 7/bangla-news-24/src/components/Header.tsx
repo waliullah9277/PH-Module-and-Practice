@@ -1,5 +1,6 @@
 import Image from "next/image";
 import NavLinks from "./NavLinks";
+import Link from "next/link";
 
 const Header = () => {
     const date = new Date().toLocaleDateString("bn-BD", {
@@ -12,25 +13,27 @@ const Header = () => {
             <div className="container mx-auto relative flex items-center justify-between py-3">
 
                 {/* Logo and Text - Center */}
-                <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2">
-                    <Image
-                        src="/logo.webp"
-                        width={50}
-                        height={50}
-                        alt="Logo Image"
-                        className="w-10 h-10"
-                    />
+                <Link href={'/'} className="mt-[-40]">
+                    <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2">
+                        <Image
+                            src="/logo.webp"
+                            width={50}
+                            height={50}
+                            alt="Logo Image"
+                            className="w-10 h-10"
+                        />
 
-                    <div>
-                        <h2 className="text-xl font-bold text-red-600">
-                            Bangla News 24
-                        </h2>
+                        <div>
+                            <h2 className="text-xl font-bold text-red-600">
+                                Bangla News 24
+                            </h2>
 
-                        <p className="text-sm text-gray-500">
-                            {date}
-                        </p>
+                            <p className="text-sm text-gray-500">
+                                {date}
+                            </p>
+                        </div>
                     </div>
-                </div>
+                </Link>
 
                 {/* Buttons - Right Side */}
                 <div className="ml-auto flex items-center gap-2">

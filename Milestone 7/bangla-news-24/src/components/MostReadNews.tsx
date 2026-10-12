@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface IMostReadNews{
     id: string
     title: string
@@ -14,7 +16,7 @@ const MostReadNews = async () => {
     return (
         <div className="flex flex-col">
             {mostReadNewsAll.map((mrn, i) => (
-                <div
+                <Link href={`/news/${mrn.id}`}
                     key={mrn.id}
                     className="flex gap-3 border-b border-blue-200 py-3 last:border-b-0"
                 >
@@ -25,7 +27,7 @@ const MostReadNews = async () => {
                     <h3 className="min-w-0 text-sm leading-6 font-medium text-gray-800 transition-colors hover:text-red-600">
                         {mrn.title}
                     </h3>
-                </div>
+                </Link>
             ))}
         </div>
     );

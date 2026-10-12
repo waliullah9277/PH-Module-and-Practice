@@ -47,7 +47,7 @@ const Marquee = async () => {
                                     key={headline.id}
                                 >
                                     <Link
-                                        href={headline.link || "#"}
+                                        href={`/news/${headline.id}`}
                                         className="text-sm font-medium transition-colors duration-200 hover:text-yellow-200"
                                     >
                                         {headline.title}

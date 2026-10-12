@@ -1,5 +1,4 @@
 import MainNews from "@/components/MainNews";
-import Marquee from "@/components/Marquee";
 import MostReadNews from "@/components/MostReadNews";
 import NewsCard from "@/components/NewsCard";
 
@@ -40,7 +39,7 @@ export default async function Home() {
 
   return (
     <div>
-      <Marquee />
+      
 
       <div className="container mx-auto grid grid-cols-1 gap-5 px-4 lg:grid-cols-3">
 
