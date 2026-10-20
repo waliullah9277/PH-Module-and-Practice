@@ -1,8 +1,14 @@
 import express from 'express';
+import cros from "cors"
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.use(cros())
+app.use(express.json())
+
 app.get("/", (req, res) =>{
+       
     res.send("Welcome to Users Management server!!!!")
 })
 
@@ -15,6 +21,17 @@ const users = [
 
 app.get("/users", (req, res) =>{
     res.send(users)
+})
+
+app.post("/users", (req, res) =>{
+    console.log("receive the data client", req.body)
+    
+    // temparory data storage
+    const newUser = req.body;
+    newUser.id = users.length + 1;
+    users.push(newUser);
+    
+    res.send({success: true, message: "User add Successfully"})
 })
 
 
