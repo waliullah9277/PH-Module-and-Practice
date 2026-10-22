@@ -3,7 +3,7 @@ dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 import express from "express";
 import cors from "cors";
-import { MongoClient } from "mongodb";
+import { MongoClient, ObjectId } from "mongodb";
 import "dotenv/config";
 
 const app = express();
@@ -38,6 +38,47 @@ app.get("/users", async(req, res) =>{
     const cursor = users.find({})
     const allUsers = await cursor.toArray()
     res.send(allUsers);
+})
+
+app.get("/users/:id", async (req, res) =>{
+  const id = req.params.id;
+  const query = {_id: new ObjectId(id)}
+  const result = await users.findOne(query)
+  res.send(result)
+})
+
+app.post("/users", async(req, res) =>{
+  const newUser = req.body;
+  console.log("Adding New User", newUser)
+  const result = await users.insertOne(newUser)
+  res.send(result);
+})
+
+app.patch("/users/:id", async(req, res)=>{
+  const id = req.params.id
+  const updateUser = req.body;
+  // console.log("user id", id, "update user", updateUser);
+
+  const filter = {
+    _id: new ObjectId(id)
+  }
+  const options = { upsert: true };
+  const updateDoc = {
+    $set:{
+      name: updateUser.name,
+      email: updateUser.email
+    }
+  }
+  const result = await users.updateOne(filter, updateDoc, options)
+  res.send(result);
+  
+})
+
+app.delete("/users/:id", async(req, res)=>{
+  const id = req.params.id;
+  const query = {_id: new ObjectId(id)}
+  const result = await users.deleteOne(query)
+  res.send(result)
 })
 
 app.listen(port, () => {
